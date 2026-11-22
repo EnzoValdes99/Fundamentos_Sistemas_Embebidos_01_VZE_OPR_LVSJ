@@ -1,0 +1,13 @@
+[Unit]
+Description=Splash personalizado con audio para Consola Retro
+After=systemd-udev-settle.service sound.target
+Before=retro-frontend.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/mpv --vo=drm --ao=alsa --audio-device=alsa/plughw:1,0 --audio-channels=stereo --really-quiet --no-osd-bar /opt/retroconsole/assets/splash.mp4
+StandardInput=tty
+StandardOutput=tty
+
+[Install]
+WantedBy=multi-user.target

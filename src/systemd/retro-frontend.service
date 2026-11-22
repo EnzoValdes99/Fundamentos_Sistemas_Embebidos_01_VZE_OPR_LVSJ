@@ -1,0 +1,17 @@
+[Unit]
+Description=Frontend Consola de Videojuegos Retro (KMS/DRM)
+After=retro-splash.service sound.target
+
+[Service]
+Type=simple
+User=pi
+SupplementaryGroups=video render audio input
+Environment=SDL_VIDEODRIVER=kmsdrm
+Environment=SDL_AUDIODRIVER=alsa
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+ExecStart=/usr/bin/python3 /opt/retroconsole/bin/frontend.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

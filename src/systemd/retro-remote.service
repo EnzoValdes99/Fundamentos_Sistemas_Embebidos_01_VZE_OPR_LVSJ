@@ -1,0 +1,13 @@
+[Unit]
+Description=Servidor Web de Control Remoto para Consola Retro
+After=network.target retro-frontend.service
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/python3 /opt/retroconsole/bin/remote_server.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

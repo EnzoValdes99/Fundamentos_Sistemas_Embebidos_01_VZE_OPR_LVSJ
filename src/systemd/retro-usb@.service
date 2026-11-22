@@ -1,0 +1,6 @@
+[Unit]
+Description=Importador automático de ROMs USB en %I
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/retroconsole/bin/usb_importer.py /dev/%I
