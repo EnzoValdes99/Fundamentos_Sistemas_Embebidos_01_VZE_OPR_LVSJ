@@ -9,7 +9,7 @@ Proyecto Final de **Fundamentos de Sistemas Embebidos** (Facultad de Ingeniería
 
 ## Enlaces del proyecto
 - **Repositorio público:** [https://github.com/EnzoValdes99/Fundamentos_Sistemas_Embebidos_01_VZE_OPR_LVSJ](https://github.com/EnzoValdes99/Fundamentos_Sistemas_Embebidos_01_VZE_OPR_LVSJ)
-- **Video-evidencia (YouTube):** PENDIENTE_AGREGAR_URL_YOUTUBE
+- **Video-evidencia (YouTube):** https://youtu.be/F2CESoSysHU
 
 ## Características implementadas
 - Sistema operativo base sobre Raspberry Pi OS Lite (64-bit) sin entorno de escritorio ni manejador de ventanas.
